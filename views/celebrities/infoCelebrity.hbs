@@ -1,0 +1,12 @@
+
+<h2> Name: {{name}}</h2>
+<h2> Occupation : {{occupation}}</h2>
+<h2>catchPhrase : {{catchPhrase}}</h2>
+
+<button class="bt1" onclick="window.location.href='/'"> Home</button> 
+
+<button class="bt1" onclick="window.location.href='/celebrities/celebrities/{{_id}}/edit'">Update celebrity</button> 
+
+<form class="form-button" action="/celebrities/celebrities/{{_id}}/delete" method="post">
+  <button type="submit">Delete celebrity</button>
+</form>

@@ -1,0 +1,14 @@
+<h2>Add moovie</h2>
+
+<form action="./create" method="post">
+    <input type="text" name="title">
+    <input type="text" name="genre">
+    <input type="text" name="plot">   
+    <select name="cast" multiple>
+        {{#each celebs}}
+            <option value="{{_id}}">{{name}}</option>
+        {{/each}}
+    </select>
+    <button type="submit">Add new movie</button>
+</form>
+<button class="bt1" onclick="window.location.href='/'"> Home</button> 
