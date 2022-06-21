@@ -4,7 +4,9 @@ const { Schema } = mongoose
 
 const newCeleb= new Schema({
 
-    name:String,
+    name:{
+       type:  String,
+    },   
     occupation:String,
     catchPhrase:String,
 

@@ -1,17 +1,20 @@
+ <div class="backListCelebs"  >
+  
+<div class="cardCeleb">
 
-
-<h2>Title : {{title}}</h2>
-<h2>Genre : {{genre}}</h2>
-<h2>Plot : {{plot}}</h2>
- <h2>Cast : </h2>
+<h2> <span>Title </span>  {{title}}</h2>
+<h2> <span>Genre </span>  {{genre}}</h2>
+<h2> <span>Plot </span>  {{plot}}</h2>
+ <h2> <span>Cast<span></h2>
 <ul>       
   {{#each this.cast}}
     <a href="/celebrities/celebrities/{{_id}}"><li><h3>{{this.name}}</h3></li></a>
   {{/each}}
 </ul>
-<button class="bt1" onclick="window.location.href='/'"> Home</button> 
-<button class="bt1" onclick="window.location.href='/movies/movies/create'"> Add movie</button> 
+
 <button class="bt1" onclick="window.location.href='/movies/movies/{{_id}}/edit'"> Uptade movie</button>
 <form class="form-button" action="/movies/movies/{{_id}}/delete" method="post">
   <button type="submit">Delete movie</button>
 </form>
+</div>
+ </div>

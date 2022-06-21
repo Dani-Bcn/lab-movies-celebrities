@@ -1,9 +1,16 @@
-<h1>All celebrities</h1>
 
-{{#each allCeleb}}
-    <a href="/celebrities/celebrities/{{_id}}"><h2>{{name}}</h2></a>
+<div class="backListCelebs"  >
+  
+<div class="cardCeleb">
+
+{{#each allCeleb}}     
+     <a href="/celebrities/celebrities/{{_id}}"><h3>{{name}}</h3></a> 
+    
+<hr>
+ <br>
 {{/each}}
 
-  <button class="bt1" onclick="window.location.href='/'"> Home</button> 
-  <button class="bt1" onclick="window.location.href='/celebrities/celebrities/create'"> Add celebrity</button> 
+</div>
+
+</div>
 
